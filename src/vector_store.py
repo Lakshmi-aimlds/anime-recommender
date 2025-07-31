@@ -17,28 +17,22 @@ class VectorStoreBuilder:
     # split the text into chunks, and save the vector store to the specified directory.
     def build_and_save_vectorstore(self):
         # Load the CSV file
-        loader = CSVLoader(file_path=self.csv_path, 
-                           encoding='utf-8',
-                           metadata_columns=[]
-                           )
+        loader = CSVLoader(
+            file_path=self.csv_path, 
+            encoding='utf-8',
+            metadata_columns=[]
+        )
         
         data = loader.load()
 
         # Split the text into manageable chunks
         splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
-        texts = splitter.split_socuments(data)
+        texts = splitter.split_documents(data)
 
-        db = Chroma.from_documents(
-            texts=texts,
-            embedding=self.embeddings,
-            persist_directory=self.persist_dir
-        )
+        db = Chroma.from_documents(texts,self.embeddings,persist_directory=self.persist_dir)
         db.persist()
 
     def load_vectorstore(self):
         # Load the vector store from the specified directory
-        db = Chroma(
-            persist_directory=self.persist_dir,
-            embedding=self.embeddings
-        )
+        return Chroma(persist_directory=self.persist_dir,embedding_function=self.embeddings)
 

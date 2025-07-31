@@ -1,4 +1,4 @@
-from langchain.chains import Retrieval_QA
+from langchain.chains import RetrievalQA
 from langchain_groq import ChatGroq
 from src.prompt_template import get_anime_prompt
 
@@ -10,7 +10,7 @@ class AnimeRecommender:
                             )
         self.prompt = get_anime_prompt()
 
-        self.qa_chain = Retrieval_QA.from_chain_type(
+        self.qa_chain = RetrievalQA.from_chain_type(
             llm=self.llm,
             chain_type = "stuff",  #"stuff" retrieves all documents and concatenates them
             retriever = retriever,
