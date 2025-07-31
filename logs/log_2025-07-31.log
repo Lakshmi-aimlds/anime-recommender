@@ -1,0 +1,39 @@
+2025-07-31 08:47:05,501 - INFO - Starting the Vector Store build process.
+2025-07-31 08:47:05,548 - INFO - Data loaded and processed successfully.
+2025-07-31 08:47:42,309 - INFO - Use pytorch device_name: cpu
+2025-07-31 08:47:42,309 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-31 08:47:47,991 - ERROR - Failed to execute pipeline 'CharacterTextSplitter' object has no attribute 'split_socuments'
+2025-07-31 08:49:00,486 - INFO - Starting the Vector Store build process.
+2025-07-31 08:49:00,498 - INFO - Data loaded and processed successfully.
+2025-07-31 08:49:05,609 - INFO - Use pytorch device_name: cpu
+2025-07-31 08:49:05,610 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-31 08:49:07,719 - ERROR - Failed to execute pipeline Chroma.from_documents() missing 1 required positional argument: 'documents'
+2025-07-31 08:57:04,658 - INFO - Starting the Vector Store build process.
+2025-07-31 08:57:04,692 - INFO - Data loaded and processed successfully.
+2025-07-31 08:57:10,847 - INFO - Use pytorch device_name: cpu
+2025-07-31 08:57:10,847 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-31 08:57:13,531 - ERROR - Failed to execute pipeline Chroma.from_documents() missing 1 required positional argument: 'documents'
+2025-07-31 09:01:17,273 - INFO - Starting the Vector Store build process.
+2025-07-31 09:01:17,285 - INFO - Data loaded and processed successfully.
+2025-07-31 09:01:21,922 - INFO - Use pytorch device_name: cpu
+2025-07-31 09:01:21,922 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-31 09:01:25,971 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-07-31 09:01:31,031 - INFO - Vector store built successfully.
+2025-07-31 09:01:31,031 - INFO - Pipeline built successfully.
+2025-07-31 12:12:16,908 - INFO - Initializing AnimeRecommendationPipeline pipeline.
+2025-07-31 12:12:27,198 - INFO - Use pytorch device_name: cpu
+2025-07-31 12:12:27,198 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-31 12:12:31,681 - INFO - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2025-07-31 12:12:33,706 - INFO - Pipeline initialized successfully.
+2025-07-31 12:13:00,867 - INFO - Received a query light hearted anime with school settings
+2025-07-31 12:13:02,729 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-31 12:13:02,746 - INFO - Recommendation generated successfully.
+2025-07-31 12:13:34,641 - INFO - Received a query I want animes similar to Naruto
+2025-07-31 12:13:36,631 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-31 12:13:36,633 - INFO - Recommendation generated successfully.
+2025-07-31 12:13:45,235 - INFO - Received a query I want animes similar to Bleach
+2025-07-31 12:13:47,234 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-31 12:13:47,235 - INFO - Recommendation generated successfully.
+2025-07-31 12:14:06,588 - INFO - Received a query I want animes similar to attack on titan
+2025-07-31 12:14:09,335 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-07-31 12:14:09,336 - INFO - Recommendation generated successfully.
