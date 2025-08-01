@@ -29,9 +29,9 @@ Use the SSH option provided to connect to the VM from the browser.
 2. Configure VM Instance
 Clone your GitHub repo
 
-git clone https://github.com/data-guru0/TESTING-9.git
+git clone https://github.com/Lakshmi-aimlds/anime-recommender.git
 ls
-cd TESTING-9
+cd anime-recommender
 ls  # You should see the contents of your project
 Install Docker
 
@@ -98,14 +98,14 @@ kubectl get nodes       # Should show minikube node
 kubectl cluster-info    # Cluster info
 docker ps               # Minikube container should be running
 4. Interlink your Github on VSCode and on VM
-git config --global user.email "gyrogodnon@gmail.com"
-git config --global user.name "data-guru0"
+git config --global user.email "<your git email>"
+git config --global user.name "Lakshmi-aimlds"
 
 git add .
 git commit -m "commit"
 git push origin main
 When prompted:
-Username: data-guru0
+Username: Lakshmi-aimlds
 Password: GitHub token (paste, it's invisible)
 5. Build and Deploy your APP on VM
 ## Point Docker to Minikube
